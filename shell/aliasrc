@@ -46,7 +46,8 @@ alias \
 alias \
  	 g='git'\
 	 gst='git status'\
-	 gc='g commit'\
+	 gc='git commit'\
+	 gcf='git config --global'\
 	 ga='git add .'\
 	 gpl='git pull'\
 	 gpom='git pull origin master'\
@@ -62,7 +63,6 @@ alias \
 	 gcl='git clone'\
 	 glg="git log --graph --branches --abbrev-commit --decorate --format=format:'%C(bold green)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold yellow)(%ar)%C(reset)%C(auto)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all"\
 	 gt='git ls-tree -r master --name-only'\
-	 grm='git remote'\
 	 gb='git branch'\
 	 br="git branch remote"\
 	 gfr="git remote update"
