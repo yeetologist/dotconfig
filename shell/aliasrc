@@ -1,0 +1,123 @@
+#!/bin/sh
+
+# Use neovim for vim if present.
+[ -x "$(command -v nvim)" ] && alias vim="nvim" vimdiff="nvim -d"
+
+# Verbosity and settings that you pretty much just always are going to want.
+alias \
+	cp="cp -iv" \
+	mv="mv -iv" \
+	rm="rm -vI" \
+	mkd="mkdir -pv" \
+	yt="youtube-dl --add-metadata -i" \
+	yta="yt -x -f bestaudio/best" \
+	ffmpeg="ffmpeg -hide_banner"
+
+# Colorize commands when possible.
+alias \
+	ls="ls -ahN --color=auto --group-directories-first" \
+	grep="grep --color=auto" \
+	diff="diff --color=auto" \
+	ccat="highlight --out-format=ansi"
+
+# These common commands are just too long! Abbreviate them.
+alias \
+	ka="killall" \
+	trem="transmission-remote" \
+	YT="youtube-viewer" \
+	sdn="sudo shutdown -h now" \
+	f="$FILE" \
+	e="$EDITOR" \
+	v="$EDITOR" \
+	p="sudo pacman" \
+	xi="sudo xbps-install" \
+	xr="sudo xbps-remove -R" \
+	xq="xbps-query" \
+	y="yay"\
+	z="zathura"
+
+alias \
+	magit="nvim -c MagitOnly" \
+	ref="shortcuts >/dev/null\ source ${XDG_CONFIG_HOME:-$HOME/.config}/shortcutrc \ source ${XDG_CONFIG_HOME:-$HOME/.config}/zshnameddirrc" \
+	weath="less -S ${XDG_DATA_HOME:-$HOME/.local/share}/weatherreport" \
+	tmux="tmux -f ${XDG_CONFIG_HOME:-$HOME/.config}/tmux/tmux.conf"
+
+#Git Alias
+alias \
+ 	 g='git'\
+	 gst='git status'\
+	 gc='g commit'\
+	 ga='git add .'\
+	 gpl='git pull'\
+	 gpom='git pull origin master'\
+	 gpu='git push'\
+	 gpuom='git push origin master'\
+	 gd='git diff'\
+	 gcm='git checkout master'\
+	 gnb='git checkout -b'\
+	 gac='git add . && git commit'\
+	 grs='git restore --staged .'\
+	 gre='git restore'\
+	 gr='git remote'\
+	 gcl='git clone'\
+	 glg="git log --graph --branches --abbrev-commit --decorate --format=format:'%C(bold green)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold yellow)(%ar)%C(reset)%C(auto)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all"\
+	 gt='git ls-tree -r master --name-only'\
+	 grm='git remote'\
+	 gb='git branch'\
+	 br="git branch remote"\
+	 gfr="git remote update"
+	 gm='git merge'\
+	 gf="git fetch"\
+	 gfa="git fetch --all"\
+	 gf="git fetch origin"\
+	 grf="git reflog"\
+	 grh="git reset HEAD~"\
+
+ # pacman and yay
+alias \
+	psyu='sudo pacman -Syyu'\
+	ysua="yay -Sua --noconfirm"\
+	ysyu="yay -Syu --noconfirm"\
+	unlock="sudo rm /var/lib/pacman/db.lck"\
+	cleanup='sudo pacman -Rns $(pacman -Qtdq)'
+
+# get fastest mirrors
+alias \
+	mirror="sudo reflector -f 30 -l 30 --number 10 --verbose --save /etc/pacman.d/mirrorlist"\
+	mirrord="sudo reflector --latest 50 --number 20 --sort delay --save /etc/pacman.d/mirrorlist"\
+	mirrors="sudo reflector --latest 50 --number 20 --sort score --save /etc/pacman.d/mirrorlist"\
+	mirrora="sudo reflector --latest 50 --number 20 --sort age --save /etc/pacman.d/mirrorlist"
+
+# youtube-dl
+alias \
+	ytF="youtube-dl -F"\
+	ytf="youtube-dl -f"\
+	ytabest="youtube-dl --extract-audio --audio-format best"\
+	ytamp3="youtube-dl --extract-audio --audio-format mp3"\
+	ytvbest="youtube-dl -f bestvideo+bestaudio"\
+	ytmeta="youtube-dl --write-description --write-info-json --write-annotations --write-sub --write-thumbnail"
+
+# npm aliases
+alias \
+	nin="npm init"\
+	ni="npm install"\
+	nrs="npm run start -s --"\
+	nrb="npm run build -s --"\
+	nrd="npm run dev -s --"\
+	nrt="npm run test -s --"\
+	nrtw="npm run test:watch -s --"\
+	nrv="npm run validate -s --"\
+	rmn="rm -rf node_modules"\
+	npmwipe="rm -rf node_modules && npm i && echo NPM is done"
+
+## yarn aliases
+alias \
+	yin="yarn init"\
+	yar="yarn run"\
+	yab="yarn build"\
+	yal="yarn lint:fix"\
+	yac="yarn commit"\
+	yas="yarn start"\
+	asb="yarn storybook:start"\
+	yat="yarn test"\
+	yatw="yarn test:watch"
