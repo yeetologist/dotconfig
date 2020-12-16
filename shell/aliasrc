@@ -9,31 +9,28 @@ alias \
 	mv="mv -iv" \
 	rm="rm -vI" \
 	mkd="mkdir -pv" \
-	yt="youtube-dl --add-metadata -i" \
-	yta="yt -x -f bestaudio/best" \
 	ffmpeg="ffmpeg -hide_banner"
 
 # Colorize commands when possible.
 alias \
-	ls="ls -ahN --color=auto --group-directories-first" \
+	ls="ls -ahNF --color=auto --group-directories-first" \
 	grep="grep --color=auto" \
 	diff="diff --color=auto" \
 	ccat="highlight --out-format=ansi"
 
 # These common commands are just too long! Abbreviate them.
 alias \
+	se="sudo $EDITOR"\
 	ka="killall" \
 	trem="transmission-remote" \
 	YT="youtube-viewer" \
 	sdn="sudo shutdown -h now" \
 	f="$FILE" \
 	e="$EDITOR" \
-	v="$EDITOR" \
-	p="sudo pacman" \
+	wp="setbg ~/Downloads/Wallpapers" \
 	xi="sudo xbps-install" \
 	xr="sudo xbps-remove -R" \
 	xq="xbps-query" \
-	y="yay"\
 	z="zathura"
 
 alias \
@@ -75,6 +72,8 @@ alias \
 
  # pacman and yay
 alias \
+	p="sudo pacman" \
+	y="yay"\
 	psyu='sudo pacman -Syyu'\
 	ysua="yay -Sua --noconfirm"\
 	ysyu="yay -Syu --noconfirm"\
@@ -90,6 +89,8 @@ alias \
 
 # youtube-dl
 alias \
+	yt="youtube-dl --add-metadata -i" \
+	yta="yt -x -f bestaudio/best" \
 	ytF="youtube-dl -F"\
 	ytf="youtube-dl -f"\
 	ytabest="youtube-dl --extract-audio --audio-format best"\

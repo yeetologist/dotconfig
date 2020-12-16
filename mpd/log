@@ -16,3 +16,24 @@ Dec 13 23:20 : config: option 'options' on line 10 was not recognized
 Dec 13 23:30 : config: option 'options' on line 10 was not recognized
 Dec 14 08:47 : config: option 'options' on line 10 was not recognized
 Dec 14 09:15 : config: option 'options' on line 10 was not recognized
+Dec 14 10:58 : config: option 'options' on line 10 was not recognized
+Dec 14 13:27 : config: option 'options' on line 10 was not recognized
+Dec 14 16:57 : config: option 'options' on line 10 was not recognized
+Dec 14 18:00 : config: option 'options' on line 10 was not recognized
+Dec 14 23:09 : config: option 'options' on line 10 was not recognized
+Dec 14 23:41 : exception: Failed to decode /home/bam/Downloads/Music/Learn Zsh in 80 Minutes macOS - Oh My Zsh - Command Line Power User _ @karlhadwen-MSPu-lYF-A8.mp4; Failed to open '/home/bam/Downloads/Music/Learn Zsh in 80 Minutes macOS - Oh My Zsh - Command Line Power User _ @karlhadwen-MSPu-lYF-A8.mp4': No such file or directory
+Dec 14 23:41 : player: played "Learn Zsh in 80 Minutes macOS - Oh My Zsh - Command Line Power User _ @karlhadwen-MSPu-lYF-A8.mp4"
+Dec 14 23:41 : exception: Failed to decode /home/bam/Downloads/Music/Learn Zsh in 80 Minutes macOS - Oh My Zsh - Command Line Power User _ @karlhadwen-MSPu-lYF-A8.mp4; Failed to open '/home/bam/Downloads/Music/Learn Zsh in 80 Minutes macOS - Oh My Zsh - Command Line Power User _ @karlhadwen-MSPu-lYF-A8.mp4': No such file or directory
+Dec 14 23:43 : update: removing Vim Diesel's OFFICIAL Vimtutor Let's Play_Commentary! (1 HOUR+ Special)-d8XtNXutVto.mp4
+Dec 14 23:43 : update: removing Learn Zsh in 80 Minutes macOS - Oh My Zsh - Command Line Power User _ @karlhadwen-MSPu-lYF-A8.mp4
+Dec 14 23:45 : update: added /真夜中のジョーク - 間宮貴子(Takako Mamiya)-nhuNb0XtRhQ.opus
+Dec 14 23:47 : player: played "真夜中のジョーク - 間宮貴子(Takako Mamiya)-nhuNb0XtRhQ.opus"
+Dec 15 09:07 : config: option 'options' on line 10 was not recognized
+Dec 15 09:08 : player: played "真夜中のジョーク - 間宮貴子(Takako Mamiya)-nhuNb0XtRhQ.opus"
+Dec 15 12:14 : config: option 'options' on line 10 was not recognized
+Dec 15 14:00 : config: option 'options' on line 10 was not recognized
+Dec 15 14:21 : player: played "真夜中のジョーク - 間宮貴子(Takako Mamiya)-nhuNb0XtRhQ.opus"
+Dec 15 14:45 : player: played "真夜中のジョーク - 間宮貴子(Takako Mamiya)-nhuNb0XtRhQ.opus"
+Dec 15 15:47 : config: option 'options' on line 10 was not recognized
+Dec 15 17:23 : config: option 'options' on line 10 was not recognized
+Dec 15 17:28 : player: played "真夜中のジョーク - 間宮貴子(Takako Mamiya)-nhuNb0XtRhQ.opus"
