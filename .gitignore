@@ -3,3 +3,6 @@ chromium/
 Code/
 Code - OSS/
 code-oss/
+pulse/
+mpd/log
+mpd/state
