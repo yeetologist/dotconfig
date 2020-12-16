@@ -27,7 +27,7 @@ alias \
 	sdn="sudo shutdown -h now" \
 	f="$FILE" \
 	e="$EDITOR" \
-	wp="setbg ~/Downloads/Wallpapers" \
+	wp="setbg ~/Downloads/Wallpapers/wp" \
 	xi="sudo xbps-install" \
 	xr="sudo xbps-remove -R" \
 	xq="xbps-query" \
@@ -42,14 +42,15 @@ alias \
 #Git Alias
 alias \
  	 g='git'\
-	 gst='git status'\
+	 gin="git init"\
+	 gst='git status -sb'\
 	 gc='git commit'\
 	 gcf='git config --global'\
 	 ga='git add .'\
 	 gpl='git pull'\
-	 gpom='git pull origin master'\
+	 gpom='git pull origin main'\
 	 gpu='git push'\
-	 gpuom='git push origin master'\
+	 gpuom='git push -u origin main'\
 	 gd='git diff'\
 	 gcm='git checkout master'\
 	 gnb='git checkout -b'\
@@ -93,10 +94,9 @@ alias \
 	yta="yt -x -f bestaudio/best" \
 	ytF="youtube-dl -F"\
 	ytf="youtube-dl -f"\
-	ytabest="youtube-dl --extract-audio --audio-format best"\
 	ytamp3="youtube-dl --extract-audio --audio-format mp3"\
-	ytvbest="youtube-dl -f bestvideo+bestaudio"\
-	ytmeta="youtube-dl --write-description --write-info-json --write-annotations --write-sub --write-thumbnail"
+	ytvbest="youtube-dl --add-metadata -f bestvideo+bestaudio"\
+	ytmeta="youtube-dl --write-description --write-info-json --write-annotations --write-sub --write-thumbnai"
 
 # npm aliases
 alias \
