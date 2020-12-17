@@ -48,9 +48,9 @@ alias \
 	 gcf='git config --global'\
 	 ga='git add .'\
 	 gpl='git pull'\
-	 gpom='git pull origin main'\
+	 gpom='git pull origin master'\
 	 gpu='git push'\
-	 gpuom='git push -u origin main'\
+	 gpuom='git push -u origin master'\
 	 gd='git diff'\
 	 gcm='git checkout master'\
 	 gnb='git checkout -b'\
