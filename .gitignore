@@ -6,3 +6,6 @@ code-oss/
 pulse/
 mpd/log
 mpd/state
+mpd/pid
+npm/
+yarn/
