@@ -59,7 +59,7 @@ alias \
 	 gre='git restore'\
 	 gr='git remote'\
 	 gcl='git clone'\
-	 glg="git log --graph --branches --abbrev-commit --decorate --format=format:'%C(bold green)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold yellow)(%ar)%C(reset)%C(auto)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all"\
+	 glg="git log --graph --branches --abbrev-commit --decorate --format=format:'%C(bold green)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold yellow)(%ar)%C(reset)%C(auto)%d%C(reset)%n''          %C(yellow)%s%C(reset) %C(cyan)- %an%C(reset)' --all"\
 	 gt='git ls-tree -r master --name-only'\
 	 gb='git branch'\
 	 br="git branch remote"\
@@ -100,6 +100,7 @@ alias \
 
 # npm aliases
 alias \
+	cra="npx create-react-app" \
 	nin="npm init"\
 	ni="npm install"\
 	nrs="npm run start -s --"\

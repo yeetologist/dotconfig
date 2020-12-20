@@ -112,6 +112,16 @@ cmd unarchive ${{
   esac
 }}
 
+# Not really image preview
+map - $~/.config/lf/draw_img "$f"
+
+cmd video_preview ${{
+    CACHE=$(mktemp /tmp/thumb_cache.XXXXX)
+    ffmpegthumbnailer -i "$f" -o $CACHE -s 0
+    ~/.config/lf/draw_img $CACHE && rm $CACHE
+}}
+map + :video_preview
+
 cmd zip %zip -r "$f" "$f"
 cmd tar %tar -cvf "$f.tar" "$f"
 cmd targz %tar -cvzf "$f.tar.gz" "$f"
