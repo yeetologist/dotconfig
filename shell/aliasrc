@@ -27,6 +27,9 @@ alias \
 	sdn="sudo shutdown -h now" \
 	f="$FILE" \
 	e="$EDITOR" \
+	sm="sudo make clean install" \
+	t="tldr" \
+	ts="tldr $1 -s" \
 	wp="setbg ~/Downloads/Wallpapers/wp" \
 	xi="sudo xbps-install" \
 	xr="sudo xbps-remove -R" \
@@ -36,42 +39,6 @@ alias \
 alias \
 	magit="nvim -c MagitOnly" \
 	ref="shortcuts >/dev/null\ source ${XDG_CONFIG_HOME:-$HOME/.config}/shortcutrc \ source ${XDG_CONFIG_HOME:-$HOME/.config}/zshnameddirrc" \
-	weath="less -S ${XDG_DATA_HOME:-$HOME/.local/share}/weatherreport" \
-	tmux="tmux -f ${XDG_CONFIG_HOME:-$HOME/.config}/tmux/tmux.conf"
-
-#Git Alias
-alias \
- 	 g='git'\
-	 gin="git init"\
-	 gs='git status -sb'\
-	 gc='git commit'\
-	 gcf='git config --global'\
-	 ga='git add .'\
-	 gpl='git pull'\
-	 gpom='git pull origin master'\
-	 gpu='git push'\
-	 gpuom='git push -u origin master'\
-	 gd='git diff'\
-	 gcm='git checkout master'\
-	 gnb='git checkout -b'\
-	 gac='git add . && git commit'\
-	 grs='git restore --staged .'\
-	 gre='git restore'\
-	 gr='git remote'\
-	 gcl='git clone'\
-	 gcle='git clean -fdi'\
-	 gl="git log --graph --branches --abbrev-commit --decorate --format=format:'%C(bold green)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold yellow)(%ar)%C(reset)%C(auto)%d%C(reset)%n''          %C(yellow)%s%C(reset) %C(cyan)- %an%C(reset)' --all"\
-	 gt='git ls-tree -r master --name-only'\
-	 gb='git branch'\
-	 gbr="git branch remote"\
-	 gfr="git remote update"
-	 gm='git merge'\
-	 gf="git fetch"\
-	 gst='git stash'\
-	 gfa="git fetch --all"\
-	 gf="git fetch origin"\
-	 grf="git reflog"\
-	 grh="git reset HEAD~"\
 
  # pacman and yay
 alias \
@@ -125,3 +92,37 @@ alias \
 	asb="yarn storybook:start"\
 	yat="yarn test"\
 	yatw="yarn test:watch"
+
+#Git Alias
+alias \
+ 	 g='git'\
+	 gin="git init"\
+	 gs='git status -sb'\
+	 gc='git commit'\
+	 gcf='git config --global'\
+	 ga='git add .'\
+	 gpl='git pull'\
+	 gpom='git pull origin master'\
+	 gpu='git push'\
+	 gpuom='git push -u origin master'\
+	 gd='git diff'\
+	 gcm='git checkout master'\
+	 gnb='git checkout -b'\
+	 gac='git add . && git commit'\
+	 grs='git restore --staged .'\
+	 gre='git restore'\
+	 gr='git remote'\
+	 gcl='git clone'\
+	 gcle='git clean -fdi'\
+	 gl="git log --graph --branches --abbrev-commit --decorate --format=format:'%C(bold green)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold yellow)(%ar)%C(reset)%C(auto)%d%C(reset)%n''          %C(yellow)%s%C(reset) %C(cyan)- %an%C(reset)' --all"\
+	 gt='git ls-tree -r master --name-only'\
+	 gb='git branch'\
+	 gbr="git branch remote"\
+	 gfr="git remote update"
+	 gm='git merge'\
+	 gf="git fetch"\
+	 gst='git stash'\
+	 gfa="git fetch --all"\
+	 gf="git fetch origin"\
+	 grf="git reflog"\
+	 grh="git reset HEAD~"\
