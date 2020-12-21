@@ -1,0 +1,9 @@
+[user]
+	email = makanmakan9c@gmail.com
+	name = yeetologist
+[core]
+	autocrlf = input
+[diff]
+	tool = vscode
+[difftool "vscode"]
+	cmd = "code --diff $LOCAL $REMOTE"
