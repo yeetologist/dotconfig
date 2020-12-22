@@ -29,7 +29,6 @@ set incsearch
 set ignorecase
 set smartcase
 set mouse=a
-set nohlsearch
 set clipboard+=unnamedplus
 set noshowmode
 set ruler
@@ -99,9 +98,11 @@ set history=5000
 " Open corresponding .pdf/.html or preview
 	map <leader>p :!opout <c-r>%<CR><CR>
 
-":norm for noobs
+" :norm for noobs
 	vnoremap <leader>m :norm<space>
 
+" Get rid of hlsearch
+	nmap <leader><space> :nohlsearch<CR>
 " Runs a script that cleans out tex build files whenever I close out of a .tex file.
 	autocmd VimLeave *.tex !texclear %
 
@@ -115,12 +116,6 @@ set history=5000
 
 " Save file as sudo on files that require root permission
 	cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
-
-" Enable Goyo by default for mutt writing
-	autocmd BufRead,BufNewFile /tmp/neomutt* let g:goyo_width=80
-	autocmd BufRead,BufNewFile /tmp/neomutt* :Goyo | set bg=light
-	autocmd BufRead,BufNewFile /tmp/neomutt* map ZZ :Goyo\|x!<CR>
-	autocmd BufRead,BufNewFile /tmp/neomutt* map ZQ :Goyo\|q!<CR>
 
 " Automatically deletes all trailing whitespace and newlines at end of file on save.
 	autocmd BufWritePre * %s/\s\+$//e
