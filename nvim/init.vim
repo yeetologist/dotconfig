@@ -31,6 +31,7 @@ set smartcase
 set mouse=a
 set clipboard+=unnamedplus
 set noshowmode
+set backspace=indent,eol,start
 set ruler
 set laststatus=0
 set noshowcmd

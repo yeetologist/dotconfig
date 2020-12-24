@@ -1,7 +1,9 @@
+"query:Unread:unread = \"yes\"" meta
+
 https://www.smashingmagazine.com/feed
 https://tympanus.net/codrops/feed/
 https://css-tricks.com/feed/
 https://dev.to/feed
 https://code.tutsplus.com/posts.atom
-https://hnrss.org/frontpage
-https://hackernoon.com/feed
+https://hnrss.org/frontpage news
+https://hackernoon.com/feed news
