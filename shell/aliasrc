@@ -40,10 +40,12 @@ alias \
 	p="sudo pacman" \
 	y="yay" \
 	psyu='sudo pacman -Syu' \
+	yi="yay -Qiv" \
 	ysua="yay -Sua --noconfirm" \
 	ysyu="yay -Syu --noconfirm" \
+	yr="yay -Rnsu" \
 	unlock="sudo rm /var/lib/pacman/db.lck" \
-	cleanup='sudo pacman -Rns $(pacman -Qtdq)' \
+	cleanup='sudo pacman -Rnsu $(pacman -Qtdq)' \
 	mirror="sudo reflector -f 30 -l 30 --number 10 --save /etc/pacman.d/mirrorlist"
 
 # youtube-dl
