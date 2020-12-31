@@ -35,7 +35,7 @@ visualizer_output_name = "my_fifo"
 visualizer_sync_interval = "60"
 visualizer_type = "spectrum"
 visualizer_in_stereo = "yes"
-visualizer_look = "◆▋"
+visualizer_look = "▗"
 
 ## Playlist Editor ##
 playlist_editor_display_mode = "columns"
@@ -64,7 +64,7 @@ statusbar_visibility = "yes"
 titles_visibility = "yes"
 
 ## Progress Bar ##
-progressbar_look =  "=>-"
+progressbar_look = "━━─"
 
 ## Now Playing ##
 now_playing_prefix = "> "

@@ -13,8 +13,8 @@ setopt autocd		# Automatically cd into typed directory.
 setopt interactive_comments
 
 # History in cache directory:
-HISTSIZE=5000
-SAVEHIST=5000
+HISTSIZE=10000
+SAVEHIST=10000
 HISTFILE=~/.cache/zsh/history
 
 # Load aliases and shortcuts if existent.
@@ -102,9 +102,9 @@ autoload edit-command-line; zle -N edit-command-line
 bindkey '^e' edit-command-line
 
 # Load Plugins; should be last.
-source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme 2> /dev/null
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh 2> /dev/null
 source /usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh 2>/dev/null
-source /usr/share/zsh/plugins/zsh-you-should-use/you-should-use.plugin.zsh 2> /dev/null
+source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme 2> /dev/null
 
 # To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
 [[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh

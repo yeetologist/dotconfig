@@ -13,7 +13,7 @@ alias \
 
 # Colorize commands when possible.
 alias \
-	l="ls -ahNF --color=auto --group-directories-first" \
+	l="ls -lahNF --color=auto --group-directories-first" \
 	grep="grep --color=auto" \
 	diff="diff --color=auto" \
 	ccat="highlight --out-format=ansi"
@@ -22,6 +22,8 @@ alias \
 alias \
 	s="sudo" \
 	se="sudo $EDITOR" \
+	sc="systemctl" \
+	jc="journalctl|tail -n 20" \
 	ka="killall" \
 	sdn="sudo shutdown -h now" \
 	f="$FILE" \
@@ -30,7 +32,7 @@ alias \
 	smi="sudo make install" \
 	t="tldr" \
 	ts="tldr -s" \
-	wp="setbg ~/Downloads/Wallpapers/wp" \
+	wp="setbg ~/Downloads/Wallpapers/" \
 	z="zathura"
 
 alias \
@@ -61,45 +63,44 @@ alias \
  # History
 alias \
 	h='history' \
-	hs='history | grep' \
-	hsi='history | grep -i' \
+	hg='history 1 | grep -i' \
 	hist10='print -l ${(o)history%% *} | uniq -c | sort -nr | head -n 10'
 
 # youtube-dl
 alias \
 	yt="youtube-dl --add-metadata -i" \
-	yta="yt -x -f bestaudio/best" \
+	yta="yt -x -f bestaudio/best -i" \
 	ytF="youtube-dl -F" \
 	ytf="youtube-dl -f" \
-	ytamp3="youtube-dl --extract-audio --audio-format mp3" \
-	ytvbest="youtube-dl --add-metadata -f bestvideo+bestaudio" \
-	ytmeta="youtube-dl --write-description --write-info-json --write-annotations --write-sub --write-thumbnail"
+	ytamp3="youtube-dl --extract-audio --audio-format mp3 -i" \
+	ytvbest="youtube-dl --add-metadata -f bestvideo+bestaudio -i" \
+	ytmeta="youtube-dl --write-description --write-info-json --write-annotations --write-sub --write-thumbnail -i"
 
-# npm aliases
-alias \
-	cra="npx create-react-app"  \
-	nin="npm init" \
-	ni="npm install" \
-	nrs="npm run start -s --" \
-	nrb="npm run build -s --" \
-	nrd="npm run dev -s --" \
-	nrt="npm run test -s --" \
-	nrtw="npm run test:watch -s --" \
-	nrv="npm run validate -s --" \
-	rmn="rm -rf node_modules" \
-	npmwipe="rm -rf node_modules && npm i && echo NPM is done"
-
-## yarn aliases
-alias \
-	yin="yarn init" \
-	yar="yarn run" \
-	yab="yarn build" \
-	yal="yarn lint:fix" \
-	yac="yarn commit" \
-	yas="yarn start" \
-	yasb="yarn storybook:start" \
-	yat="yarn test" \
-	yatw="yarn test:watch"
+## npm aliases
+#alias \
+	#cra="npx create-react-app"  \
+	#nin="npm init" \
+	#ni="npm install" \
+	#nrs="npm run start -s --" \
+	#nrb="npm run build -s --" \
+	#nrd="npm run dev -s --" \
+	#nrt="npm run test -s --" \
+	#nrtw="npm run test:watch -s --" \
+	#nrv="npm run validate -s --" \
+	#rmn="rm -rf node_modules" \
+	#npmwipe="rm -rf node_modules && npm i && echo NPM is done"
+#
+### yarn aliases
+#alias \
+	#yin="yarn init" \
+	#yar="yarn run" \
+	#yab="yarn build" \
+	#yal="yarn lint:fix" \
+	#yac="yarn commit" \
+	#yas="yarn start" \
+	#yasb="yarn storybook:start" \
+	#yat="yarn test" \
+	#yatw="yarn test:watch"
 
 #Git Alias
 alias \
