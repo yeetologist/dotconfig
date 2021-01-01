@@ -30,8 +30,8 @@ alias \
 	e="$EDITOR" \
 	n="ncdu" \
 	smi="sudo make install" \
-	t="tldr" \
-	ts="tldr -s" \
+	T="tldr" \
+	t="tldr -s" \
 	wp="setbg ~/Downloads/Wallpapers/" \
 	z="zathura"
 
@@ -55,10 +55,8 @@ alias \
 
  # get top process eating memory / cpu if not work try excute : export LC_ALL='C'
 alias \
-	psmem='ps -e -orss=,args= | sort -b -k1 -nr' \
-	psmem10='ps -e -orss=,args= | sort -b -k1 -nr | head -10' \
-	pscpu='ps -e -o pcpu,cpu,nice,state,cputime,args|sort -k1,1n -nr' \
-	pscpu10='ps -e -o pcpu,cpu,nice,state,cputime,args|sort -k1,1n -nr | head -10'
+	psmem='ps -e -orss=,args= | sort -b -k1 -nr | sed 11q' \
+	pscpu='ps -e -o pcpu,cpu,nice,state,cputime,args|sort -k1,1n -nr | sed 11q'
 
  # History
 alias \

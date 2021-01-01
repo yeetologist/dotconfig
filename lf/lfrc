@@ -35,28 +35,6 @@ cmd delete ${{
 	[ $ans = "y" ] && rm -rf $fx
 }}
 
-cmd moveto ${{
-	clear; tput cup $(($(tput lines)/3)); tput bold
-	set -f
-	clear; echo "Move to where?"
-	dest="$(cut -d'	' -f2- ${XDG_CONFIG_HOME:-$HOME/.config} | fzf | sed 's|~|$HOME|' )" &&
-	for x in $fx; do
-		eval mv -iv \"$x\" \"$dest\"
-	done &&
-	notify-send "🚚 File(s) moved." "File(s) moved to $dest."
-}}
-
-cmd copyto ${{
-	clear; tput cup $(($(tput lines)/3)); tput bold
-	set -f
-	clear; echo "Copy to where?"
-	dest="$(cut -d'	' -f2- ${XDG_CONFIG_HOME:-$HOME/.config} | fzf | sed 's|~|$HOME|' )" &&
-	for x in $fx; do
-		eval cp -ivr \"$x\" \"$dest\"
-	done &&
-	notify-send "📋 File(s) copied." "File(s) copies to $dest."
-}}
-
 cmd setbg "$1"
 cmd bulkrename $vidir
 
@@ -137,12 +115,10 @@ map J $lf -remote "send $id cd $(cut -d'	' -f2 ${XDG_CONFIG_HOME:-$HOME/.config}
 map gh
 map g top
 map D delete
-map C copyto
-map M moveto
 map mf mkfile
 map mr sudomkfile
 map md mkdir
-map ch chmod
+map C chmod
 map <c-n> push :mkdir<space>
 map <c-r> reload
 map <enter> shell
