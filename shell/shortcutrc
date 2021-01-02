@@ -2,12 +2,13 @@
 alias cac="~/.cache && lfcd" \
 cf="~/.config && lfcd" \
 cfs="~/.config/shell && lfcd" \
-D="~/Downloads && lfcd" \
+d="~/Downloads && lfcd" \
 es="~/Downloads/Essential && lfcd" \
+ani="~/Downloads/Anime && lfcd" \
 lyn="~/Downloads/Essential/Lynda && lfcd" \
 ude="~/Downloads/Essential/Udemy && lfcd" \
 you="~/Downloads/Essential/Youtube && lfcd" \
-d="~/Downloads/Documents && lfcd" \
+D="~/Downloads/Documents && lfcd" \
 dc="~/Downloads/bunch-of-config && lfcd" \
 dt="~/.local/share && lfcd" \
 hdd="/mnt && lfcd" \

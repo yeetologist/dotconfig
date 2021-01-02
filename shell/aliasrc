@@ -30,6 +30,7 @@ alias \
 	e="$EDITOR" \
 	n="ncdu" \
 	smi="sudo make install" \
+	pt="patch --merge -i" \
 	T="tldr" \
 	t="tldr -s" \
 	wp="setbg ~/Downloads/Wallpapers/" \
