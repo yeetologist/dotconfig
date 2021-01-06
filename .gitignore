@@ -6,3 +6,6 @@ mpd/log
 mpd/state
 mpd/pid
 pcmanfm/
+nvim/plugged/
+coc/
+configstore/

@@ -30,6 +30,7 @@ alias \
 	f="$FILE" \
 	e="$EDITOR" \
 	n="ncdu" \
+	N="ncmpcpp" \
 	smi="sudo make install" \
 	pt="patch --merge -i" \
 	T="tldr" \
