@@ -25,6 +25,7 @@ alias \
 	sc="systemctl" \
 	jc="journalctl|tail -n 20" \
 	ka="killall" \
+	m="mpd" \
 	sdn="sudo shutdown -h now" \
 	f="$FILE" \
 	e="$EDITOR" \
@@ -138,7 +139,6 @@ alias \
 	 grh="git reset HEAD~"
 
  # FUNCTION
- alias x=extract \
 
  extract() {
 	local remove_archive
@@ -219,3 +219,4 @@ alias \
 		shift
 	done
 }
+ alias x=extract
