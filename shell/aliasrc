@@ -9,6 +9,7 @@ alias \
 	mv="mv -iv" \
 	rm="rm -vI" \
 	mkd="mkdir -pv" \
+	which="which -a" \
 	ffmpeg="ffmpeg -hide_banner"
 
 # Colorize commands when possible.
