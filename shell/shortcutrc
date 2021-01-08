@@ -1,6 +1,7 @@
 # vim: filetype=sh
 alias cac="~/.cache && lfcd" \
 cf="~/.config && lfcd" \
+lc="~/.local && lfcd" \
 cfs="~/.config/shell && lfcd" \
 d="~/Downloads && lfcd" \
 es="~/Downloads/Essential && lfcd" \

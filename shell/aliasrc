@@ -122,12 +122,12 @@ alias \
 	 gnb='git checkout -b' \
 	 gac='git add . && git commit' \
 	 grs='git restore --staged .' \
-	 gre='git restore' \
+	 gr='git restore' \
 	 grss='git restore --source' \
-	 gr='git remote' \
+	 gre='git remote' \
 	 gcl='git clone' \
 	 gcle='git clean -fdi' \
-	 gl="git log --graph --branches --abbrev-commit --decorate --format=format:'%C(bold green)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold yellow)(%ar)%C(reset)%C(auto)%d%C(reset)%n''          %C(yellow)%s%C(reset) %C(cyan)- %an%C(reset)' --all" \
+	 gl="git log --graph --branches --abbrev-commit --decorate --format=format:'%C(bold green)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold red)(%ar)%C(reset)%C(auto)%d%C(reset)%n''          %C(yellow)%s%C(reset) %C(cyan)- %an%C(reset)' --all" \
 	 gt='git ls-tree -r master --name-only' \
 	 gb='git branch' \
 	 gbr="git branch remote" \
