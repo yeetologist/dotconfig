@@ -5,6 +5,7 @@ pki/
 mpd/log
 mpd/state
 mpd/pid
+mpv/playlists/
 pcmanfm/
 nvim/plugged/
 coc/
