@@ -55,6 +55,7 @@ alias \
 	ysyu="yay -Syu --noconfirm" \
 	yr="yay -Rnsu" \
 	unlock="sudo rm /var/lib/pacman/db.lck" \
+	clean="sync;sudo sysctl vm.drop_caches=3"
 	cleanup='sudo pacman -Rnsu $(pacman -Qtdq)' \
 	mirror="sudo reflector -f 20 -l 20 --number 10 --save /etc/pacman.d/mirrorlist"
 

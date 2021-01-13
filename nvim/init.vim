@@ -36,6 +36,10 @@ set laststatus=0
 set noshowcmd
 set hlsearch
 set history=5000
+" Tab Settings
+set shiftwidth=2
+set softtabstop=2
+set tabstop=2
 colorscheme onedark
 
 " Some basics:
