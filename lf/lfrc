@@ -38,6 +38,8 @@ cmd delete ${{
 
 cmd setbg "$1"
 cmd bulkrename $vidir
+cmd mpv "$1"
+cmd code "$1"
 
 #brody
 cmd mkdir ${{
@@ -91,10 +93,6 @@ cmd unarchive ${{
   esac
 }}
 
-cmd mpv ${{
-	mpv "$f"
-}}
-
 # Not really image preview
 map - $~/.config/lf/draw_img "$f"
 
@@ -129,7 +127,8 @@ map <c-r> reload
 map <enter> shell
 map x $$f
 map X !$f
-map t mpv
+map tm $mpv $f
+map tc $code $f
 map o &mimeopen $f
 map O $mimeopen --ask $f
 
@@ -143,7 +142,17 @@ map b $setbg $f
 map <c-e> down
 map <c-y> up
 map V push :!nvim<space>
-map . cd ~/Downloads
+
+#Dir. Shortcut
+map .D cd ~/Downloads
+map .v cd ~/Downloads/Video
+map .d cd ~/Downloads/Documents
+map .m cd ~/Downloads/Music
+map .e cd ~/Downloads/Essential
+map .c cd ~/.config
+map .l cd ~/.local
+map .b cd ~/.local/bin
+map .s cd ~/.local/src
 
 # Archive Mappings
 map az zip

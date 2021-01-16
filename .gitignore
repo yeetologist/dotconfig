@@ -1,10 +1,7 @@
 BraveSoftware/
-chromium/
 pulse/
 pki/
-mpd/log
-mpd/state
-mpd/pid
+mpd/
 mpv/playlists/
 pcmanfm/
 nvim/plugged/
