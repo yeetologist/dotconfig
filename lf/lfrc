@@ -144,11 +144,13 @@ map <c-y> up
 map V push :!nvim<space>
 
 #Dir. Shortcut
+map .h cd ~/
 map .D cd ~/Downloads
 map .v cd ~/Downloads/Video
 map .d cd ~/Downloads/Documents
 map .m cd ~/Downloads/Music
 map .e cd ~/Downloads/Essential
+map .E cd ~/Downloads/DEEEEEEP
 map .c cd ~/.config
 map .l cd ~/.local
 map .b cd ~/.local/bin

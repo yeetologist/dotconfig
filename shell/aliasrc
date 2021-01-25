@@ -23,7 +23,7 @@ alias \
 	s="sudo" \
 	se="sudo $EDITOR" \
 	sc="systemctl" \
-	jc="journalctl|tail -n 20" \
+	jc="journalctl -r" \
 	ka="killall" \
 	m="mpd" \
 	sdn="sudo shutdown -h now" \
@@ -42,8 +42,8 @@ alias \
 
 alias \
 	magit="nvim -c MagitOnly" \
-	ref="shortcuts >/dev/null\ source ${XDG_CONFIG_HOME:-$HOME/.config}/shortcutrc \ source ${XDG_CONFIG_HOME:-$HOME/.config}/zshnameddirrc"
-
+	ref="shortcuts >/dev/null\ source ${XDG_CONFIG_HOME:-$HOME/.config}/shortcutrc \ source ${XDG_CONFIG_HOME:-$HOME/.config}/zshnameddirrc" \
+	B="sudo echo '100' > /sys/class/backlight/intel_backlight/brightness"
  # pacman and yay
 alias \
 	p="sudo pacman" \
@@ -52,10 +52,9 @@ alias \
 	yi="yay -Qi" \
 	ye="yay -Qe" \
 	ysua="yay -Sua --noconfirm" \
-	ysyu="yay -Syu --noconfirm" \
 	yr="yay -Rnsu" \
 	unlock="sudo rm /var/lib/pacman/db.lck" \
-	clean="sync;sudo sysctl vm.drop_caches=3"
+	c="sync;sudo sysctl vm.drop_caches=3" \
 	cleanup='sudo pacman -Rnsu $(pacman -Qtdq)' \
 	mirror="sudo reflector -f 20 -l 20 --number 10 --save /etc/pacman.d/mirrorlist"
 
@@ -72,13 +71,14 @@ alias \
 
 # youtube-dl
 alias \
-	yt="youtube-dl --add-metadata -i" \
+	yt="youtube-dl --add-metadata --write-auto-sub -i" \
 	yta="yt -x -f bestaudio/best -i" \
 	ytF="youtube-dl -F" \
 	ytf="youtube-dl -f" \
 	ytamp3="youtube-dl --extract-audio --audio-format mp3 -i" \
 	ytvbest="youtube-dl --add-metadata -f bestvideo+bestaudio -i" \
-	ytmeta="youtube-dl --write-description --write-info-json --write-annotations --write-sub --write-thumbnail -i"
+	ytmeta="youtube-dl --write-description --write-info-json --write-annotations --write-sub --write-thumbnail -i" \
+	ytsub="youtube-dl --skip-download --write-auto-sub"
 
 ## npm aliases
 #alias \
@@ -116,6 +116,7 @@ alias \
 	 gcf='git config --global' \
 	 ga='git add .' \
 	 gpl='git pull' \
+	 gh='git help everyday' \
 	 gpom='git pull origin master' \
 	 gpu='git push --set-upstream' \
 	 gpuom='git push -u origin master' \

@@ -5,6 +5,7 @@ lc="~/.local && lfcd" \
 cfs="~/.config/shell && lfcd" \
 D="~/Downloads && lfcd" \
 es="~/Downloads/Essential && lfcd" \
+E="~/Downloads/DEEEEEEP && lfcd" \
 ani="~/Downloads/Anime && lfcd" \
 lyn="~/Downloads/Essential/Lynda && lfcd" \
 ude="~/Downloads/Essential/Udemy && lfcd" \
