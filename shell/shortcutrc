@@ -3,6 +3,7 @@ alias cac="~/.cache && lfcd" \
 cf="~/.config && lfcd" \
 lc="~/.local && lfcd" \
 cfs="~/.config/shell && lfcd" \
+V="~/vimwiki" \
 D="~/Downloads && lfcd" \
 es="~/Downloads/Essential && lfcd" \
 E="~/Downloads/DEEEEEEP && lfcd" \

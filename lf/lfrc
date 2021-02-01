@@ -146,6 +146,7 @@ map V push :!nvim<space>
 #Dir. Shortcut
 map .h cd ~/
 map .D cd ~/Downloads
+map .a cd ~/Downloads/Anime
 map .v cd ~/Downloads/Video
 map .d cd ~/Downloads/Documents
 map .m cd ~/Downloads/Music

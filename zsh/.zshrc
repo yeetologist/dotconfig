@@ -96,19 +96,15 @@ lfcd () {
     fi
 }
 bindkey -s '^o' 'lfcd\n'
-
 bindkey -s '^a' 'bc -lq\n'
-
 bindkey -s '^f' 'cd "$(dirname "$(fzf)")"\n'
-
 bindkey -s '^y' 'mpd\n'
-
+bindkey -s '^p' 'ping -c 2 google.com\n'
+bindkey -s '^b' 'sudo echo '50' > /sys/class/backlight/intel_backlight/brightness\n'
 bindkey '^[[P' delete-char
-
 # Edit line in vim with ctrl-e:
 autoload edit-command-line; zle -N edit-command-line
 bindkey '^e' edit-command-line
-
 # Load Plugins; should be last.
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh 2> /dev/null
 source /usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh 2>/dev/null

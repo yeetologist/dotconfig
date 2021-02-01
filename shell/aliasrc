@@ -25,7 +25,6 @@ alias \
 	sc="systemctl" \
 	jc="journalctl -r" \
 	ka="killall" \
-	m="mpd" \
 	sdn="sudo shutdown -h now" \
 	f="$FILE" \
 	e="$EDITOR" \
@@ -37,13 +36,11 @@ alias \
 	t="tldr -s" \
 	W="which -a" \
 	wa="whatis" \
-	wp="setbg ~/Downloads/Wallpapers/" \
 	z="zathura"
 
 alias \
 	magit="nvim -c MagitOnly" \
 	ref="shortcuts >/dev/null\ source ${XDG_CONFIG_HOME:-$HOME/.config}/shortcutrc \ source ${XDG_CONFIG_HOME:-$HOME/.config}/zshnameddirrc" \
-	B="sudo echo '100' > /sys/class/backlight/intel_backlight/brightness"
  # pacman and yay
 alias \
 	p="sudo pacman" \
@@ -57,6 +54,11 @@ alias \
 	c="sync;sudo sysctl vm.drop_caches=3" \
 	cleanup='sudo pacman -Rnsu $(pacman -Qtdq)' \
 	mirror="sudo reflector -f 20 -l 20 --number 10 --save /etc/pacman.d/mirrorlist"
+
+ # checking filesystem
+alias \
+	lsf="lsblk -f" \
+	dft="df -Th"
 
  # get top process eating memory / cpu if not work try excute : export LC_ALL='C'
 alias \
@@ -76,6 +78,8 @@ alias \
 	ytF="youtube-dl -F" \
 	ytf="youtube-dl -f" \
 	ytamp3="youtube-dl --extract-audio --audio-format mp3 -i" \
+	yt3="youtube-dl -f 'bestvideo[height<=360]+bestaudio/best[height<=360]'" \
+	yt4="youtube-dl -f 'bestvideo[height<=480]+bestaudio/best[height<=480]'" \
 	ytvbest="youtube-dl --add-metadata -f bestvideo+bestaudio -i" \
 	ytmeta="youtube-dl --write-description --write-info-json --write-annotations --write-sub --write-thumbnail -i" \
 	ytsub="youtube-dl --skip-download --write-auto-sub"
@@ -124,7 +128,7 @@ alias \
 	 gds='git diff --staged' \
 	 gcm='git checkout master' \
 	 gnb='git checkout -b' \
-	 gac='git add . && git commit' \
+	 gac='git add . && git commit -v' \
 	 grs='git restore --staged .' \
 	 gr='git restore' \
 	 grss='git restore --source' \
