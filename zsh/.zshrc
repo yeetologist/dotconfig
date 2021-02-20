@@ -100,7 +100,7 @@ bindkey -s '^a' 'bc -lq\n'
 bindkey -s '^f' 'cd "$(dirname "$(fzf)")"\n'
 bindkey -s '^y' 'mpd\n'
 bindkey -s '^p' 'ping -c 2 google.com\n'
-bindkey -s '^b' 'sudo echo '50' > /sys/class/backlight/intel_backlight/brightness\n'
+bindkey -s '^b' 'echo '50' > /sys/class/backlight/intel_backlight/brightness\n'
 bindkey '^[[P' delete-char
 # Edit line in vim with ctrl-e:
 autoload edit-command-line; zle -N edit-command-line

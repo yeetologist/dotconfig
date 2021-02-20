@@ -78,10 +78,10 @@ alias \
 	ytF="youtube-dl -F" \
 	ytf="youtube-dl -f" \
 	ytamp3="youtube-dl --extract-audio --audio-format mp3 -i" \
-	yt3="youtube-dl -f 'bestvideo[height<=360]+bestaudio/best[height<=360]'" \
-	yt4="youtube-dl -f 'bestvideo[height<=480]+bestaudio/best[height<=480]'" \
+	yt3="youtube-dl --add-metadata -f 'bestvideo[height<=360]+bestaudio/best[height<=360] -i'" \
+	yt4="youtube-dl --add-metadata -f 'bestvideo[height<=480]+bestaudio/best[height<=480] -i'" \
 	ytvbest="youtube-dl --add-metadata -f bestvideo+bestaudio -i" \
-	ytmeta="youtube-dl --write-description --write-info-json --write-annotations --write-sub --write-thumbnail -i" \
+	ytmeta="youtube-dl --add-metadata --write-description --write-info-json --write-annotations --write-sub --write-thumbnail -i" \
 	ytsub="youtube-dl --skip-download --write-auto-sub"
 
 ## npm aliases
