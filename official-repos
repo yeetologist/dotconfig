@@ -65,7 +65,6 @@ pulseaudio-alsa
 pulsemixer
 reflector
 sed
-slock
 sudo
 sxiv
 texinfo
@@ -78,6 +77,7 @@ xcape
 xclip
 xcompmgr
 xdotool
+xf86-video-intel
 xorg-server
 xorg-xdpyinfo
 xorg-xinit
