@@ -128,7 +128,7 @@ map <enter> shell
 map x $$f
 map X !$f
 map tm $mpv $f
-map tc $code $f
+map tc $codium $f
 map o &mimeopen $f
 map O $mimeopen --ask $f
 
