@@ -4,6 +4,6 @@
 [core]
 	autocrlf = input
 [diff]
-	tool = vscode
-[difftool "vscode"]
-	cmd = "code --diff $LOCAL $REMOTE"
+	tool = vscodium
+[difftool "vscodium"]
+	cmd = "codium --diff $LOCAL $REMOTE"
