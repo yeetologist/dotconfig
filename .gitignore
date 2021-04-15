@@ -3,6 +3,7 @@ pulse/
 pki/
 mpd/
 mpv/playlists/
+ncmpcpp/error.log
 pcmanfm/
 nvim/plugged/
 coc/
