@@ -145,17 +145,21 @@ map V push :!nvim<space>
 
 #Dir. Shortcut
 map .h cd ~/
-map .D cd ~/Downloads
+map .d cd ~/Downloads
 map .a cd ~/Downloads/Anime
+map .n cd ~/Downloads/Novel
+map .s cd ~/Downloads/Series
+map .p cd ~/Downloads/Pictures
 map .v cd ~/Downloads/Video
-map .d cd ~/Downloads/Documents
+map .D cd ~/Downloads/Documents
 map .m cd ~/Downloads/Music
+map .M cd /mnt
 map .e cd ~/Downloads/Essential
 map .E cd ~/Downloads/DEEEEEEP
 map .c cd ~/.config
 map .l cd ~/.local
 map .b cd ~/.local/bin
-map .s cd ~/.local/src
+map .S cd ~/.local/src
 
 # Archive Mappings
 map az zip
