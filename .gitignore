@@ -1,5 +1,6 @@
 Bitwarden/
 BraveSoftware/
+Code/
 pulse/
 pki/
 mpd/
@@ -9,4 +10,3 @@ pcmanfm/
 nvim/plugged/
 coc/
 configstore/
-VSCodium/
