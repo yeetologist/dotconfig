@@ -10,6 +10,7 @@ binutils
 bison
 calcurse
 dialog
+dnscrypt-proxy
 dosfstools
 dunst
 efibootmgr

@@ -43,7 +43,6 @@ alias \
 	ref="shortcuts >/dev/null\ source ${XDG_CONFIG_HOME:-$HOME/.config}/shortcutrc \ source ${XDG_CONFIG_HOME:-$HOME/.config}/zshnameddirrc" \
  # pacman and yay
 alias \
-	p="sudo pacman" \
 	y="yay" \
 	psyu='sudo pacman -Syu' \
 	yi="yay -Qi" \
